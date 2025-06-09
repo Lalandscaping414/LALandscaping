@@ -6,45 +6,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo-placeholder.png" alt="LA Landscaping Logo" class="logo">
-        <h1>LA Landscaping</h1>
-        <p>Where Quality Meets Curb Appeal</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services & Education</a></li>
-            <li><a href="quote.html">Request a Quote</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <main>
-        
-<h2>Request a Service Quote</h2>
-<form action="mailto:LAlandscaping414@gmail.com" method="POST" enctype="text/plain">
-    <label for="name">Name</label><input type="text" id="name" name="Name" required>
-    <label for="email">Email</label><input type="email" id="email" name="Email" required>
-    <label for="phone">Phone</label><input type="tel" id="phone" name="Phone">
-    <label for="services">Select Services Needed</label>
-    <select id="services" name="Services Needed" multiple>
-        <option>Landscape Design & Installation</option>
-        <option>Lawn Maintenance</option>
-        <option>Tree Care & Management</option>
-        <option>Landscape Renovation</option>
-        <option>Excavation & Grading</option>
-        <option>Snow Plowing & Salting</option>
-        <option>Irrigation Systems</option>
-        <option>Grounds Management</option>
-    </select>
-    <label for="details">Project Details</label><textarea id="details" name="Project Details" rows="6"></textarea>
-    <button type="submit">Submit Quote Request</button>
-</form>
+<header>
+    <img src="logo-placeholder.png" alt="LA Landscaping Logo" class="logo">
+    <h1>Request a Quote</h1>
+    <p>Let’s Talk Curb Appeal – Request a Quote Now</p>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="quote.html">Request a Quote</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<section>
+    <form action="mailto:LAlandscaping414@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-    </main>
-    <footer>
-        <p>Contact us: LAlandscaping414@gmail.com | 414-795-8663 | Muskego, WI</p>
-        <p>&copy; 2025 LA Landscaping</p>
-    </footer>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="service">Select the Service(s) You Need:</label><br>
+        <select id="service" name="service" multiple>
+            <option>Landscape Design & Installation</option>
+            <option>Lawn Maintenance</option>
+            <option>Tree Care & Management</option>
+            <option>Landscape Renovation</option>
+            <option>Excavation & Grading</option>
+            <option>Snow Plowing & Salting</option>
+            <option>Irrigation Systems</option>
+            <option>Grounds Management (Commercial / HOA)</option>
+        </select><br><br>
+
+        <label for="details">Additional Details:</label><br>
+        <textarea id="details" name="details" rows="5" cols="40"></textarea><br><br>
+
+        <label for="startdate">Preferred Start Date:</label><br>
+        <input type="date" id="startdate" name="startdate"><br><br>
+
+        <input type="submit" value="Submit Quote Request">
+    </form>
+</section>
+<footer>
+    <p>&copy; 2025 LA Landscaping | Muskego, WI | 414-795-8663 | LAlandscaping414@gmail.com</p>
+</footer>
 </body>
 </html>
